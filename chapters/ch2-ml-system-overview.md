@@ -50,14 +50,14 @@
         - Loss 결합 예시
             
             $$
-            \text{loss} = \alpha \cdot \text{loss\_a} + \beta \cdot \text{loss\_b}
+            \text{loss} = \alpha \cdot \text{loss}_{a} + \beta \cdot \text{loss}_{b}
             $$
             
     - **방법 2: 각 loss를 갖는 모델 2개를 각각 학습**
         - 모델 output 결합 예시
             
             $$
-            \text{output} = \alpha \cdot \text{output\_a} + \beta \cdot \text{output\_b}
+            \text{output} = \alpha \cdot \text{output}_{a} + \beta \cdot \text{output}_{b}
             $$
             
         
@@ -66,6 +66,7 @@
         - 이유: 모델 개발과 유지 관리 측면에서 유리
             - weight를 조절할 때마다 모델을 재학습하지 않아도 됨
             - 각 model의 유지 관리 일정이 다르더라도, 전체 결과를 유지 관리할 수 있음
+
 - ➡️ 방법 2(모델 2개 학습)가 유지보수 측면에서 유리
     - 장점: 모델 개발/유지보수 용이성 및 가중치 조절 시 **재학습 불필요**
 
